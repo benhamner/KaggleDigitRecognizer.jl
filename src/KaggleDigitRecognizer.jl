@@ -1,4 +1,4 @@
-module KaggleDigitRecognizer.jl
+module KaggleDigitRecognizer
 
 # package code goes here
 

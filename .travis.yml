@@ -9,5 +9,5 @@ before_install:
   - sudo apt-get update -qq -y
   - sudo apt-get install libpcre3-dev julia -y
 script:
-  - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("KaggleDigitRecognizer.jl"))`); Pkg.pin("KaggleDigitRecognizer.jl"); Pkg.resolve()'
-  - julia -e 'using KaggleDigitRecognizer.jl; @assert isdefined(:KaggleDigitRecognizer.jl); @assert typeof(KaggleDigitRecognizer.jl) === Module'
+  - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("KaggleDigitRecognizer"))`); Pkg.pin("KaggleDigitRecognizer"); Pkg.resolve()'
+  - julia -e 'using KaggleDigitRecognizer; @assert isdefined(:KaggleDigitRecognizer); @assert typeof(KaggleDigitRecognizer) === Module'

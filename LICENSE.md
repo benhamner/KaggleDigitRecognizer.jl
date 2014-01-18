@@ -1,4 +1,4 @@
-The KaggleDigitRecognizer.jl.jl package is licensed under the Simplified BSD License:
+The KaggleDigitRecognizer.jl package is licensed under the Simplified BSD License:
 
 > Copyright (c) 2014: Ben Hamner.
 >
