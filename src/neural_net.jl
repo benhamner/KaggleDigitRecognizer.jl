@@ -1,6 +1,6 @@
 using MachineLearning
 
-opts = PipelineOptions([ZmuvOptions()], neural_net_options(hidden_layers=[600], stop_criteria=StopAfterIteration(25), display=true, learning_rate=500.0, track_cost=true))
+opts = PipelineOptions([ZmuvOptions()], neural_net_options(hidden_layers=[600], stop_criteria=StopAfterIteration(25), display=true, learning_rate=1000.0, track_cost=true))
 
 data_path = joinpath(ENV["DataPath"], "Kaggle", "digit-recognizer")
 data, header = readcsv(joinpath(data_path, "train.csv"), Float64, has_header=true)
